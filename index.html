@@ -26,16 +26,28 @@
     <div class="container-fluid">
         <h1 class="text-center p-4">Tienda de <label>Muebles</label><br><label class="Bronce">Orfevre</label></h1>
     </div>
-    <nav>
-        <div class="navigation-bar">
-            <h5>Inicio</h5>
-            <h5>Nosotros</h5>
-            <h5>Tienda</h5>
-            <h5>Blog</h5>
-            <h5>Galeria</h5>
-            <h5>Contacto</h5>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-uppercase" href="#">Menu</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                <ul class="navbar-nav mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>

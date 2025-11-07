@@ -32,12 +32,37 @@ label{
 .navigation-bar h5{
     width: fit-content;
 }
-.navigation-bar h5:hover{
+.navbar {
+  background-color: var(--midnigth-blue);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--champagne-white) !important;
+}
+
+.nav-link:hover {
+  color: var(--copper-accent) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+  border-color: var(--champagne-white);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234,231,225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-nav .nav-link {
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link:hover{
     color: #1A2634;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     transform: translateY(-5px);
 }
+
 .carousel-caption h5, 
 .carousel-caption p {
   color: #EAE7E1;
@@ -279,6 +304,7 @@ label{
 }
 
 
+
 /*Animación*/
 @keyframes fadeSlideUp {
   from {
@@ -335,5 +361,12 @@ label{
 
     .social-icons a {
       margin: 0 .5rem;
+    }
+
+    .products-parent{
+      padding: 1rem 2rem;
+    }
+    .gallery-section{
+      padding: 0 2rem;
     }
 }
